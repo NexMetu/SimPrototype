@@ -1,0 +1,33 @@
+# created with CityEngine 2017.0.3406 0609R (based on Esri Procedural Runtime 1.8.3501, build date: Fri 06/09/2017 05:25 PM)
+# creation date: Fri Nov 17 11:23:31 2017
+
+# mesh 'mesh_CityEngineShapeMaterial_469' from geometry 'mesh_CityEngineShapeMaterial_469'
+v 606.220 -266.808 161.379
+v 602.740 -266.808 163.879
+v 598.866 -266.808 166.660
+v 592.244 -266.808 157.440
+v 599.974 -266.808 151.899
+v 604.456 -266.808 158.140
+v 604.085 -266.808 158.406
+v 604.456 -252.049 158.140
+v 604.085 -252.049 158.406
+v 606.220 -252.049 161.379
+v 602.740 -252.049 163.879
+v 598.866 -252.049 166.660
+v 592.244 -252.049 157.440
+v 599.974 -252.049 151.899
+# 14 vertices
+
+g CityEngineShapeMaterial_469
+s off
+f 2 1 7 6 5 4 3
+f 9 8 14 13 12 11 10
+f 1 7 9 10
+f 7 6 8 9
+f 6 5 14 8
+f 5 4 13 14
+f 4 3 12 13
+f 3 2 11 12
+f 2 1 10 11
+# 9 faces
+
