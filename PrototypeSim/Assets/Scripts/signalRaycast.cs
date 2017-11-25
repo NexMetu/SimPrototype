@@ -1,50 +1,45 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class signalRaycast : MonoBehaviour {
 
-    public int numRays;
     public int distanceMax;
+    public int numStation;
 
-    // Use this for initialization
+    RaycastHit hit;
+
     void Start () {
-    
-    }
-	
-	// Update is called once per frame
-	void Update () {
-        foreach(var direction in getSphereDirections(numRays)){
 
-            RaycastHit hit;
-            if (Physics.Raycast(transform.position, direction, out hit))
+	}
+	
+	void Update () {
+
+        //Sends a rayCast and draws line for each baseStation
+        foreach (Vector3 direction in baseStationDirection(numStation)){
+            if (Physics.Raycast(transform.position, direction, out hit, distanceMax))
             {
-                Vector3 incomingVec = hit.point - transform.position;
-                Vector3 reflectVec = Vector3.Reflect(incomingVec, hit.normal);
-                Debug.DrawRay(transform.position, direction * hit.distance);
-                Debug.DrawRay(hit.point, reflectVec);
+                if (hit.collider.name == "testReciever")
+                {
+                    Debug.DrawRay(transform.position, direction, Color.blue);
+                }
             }
         }
+
+        
     }
 
-    private Vector3[] getSphereDirections(int numDirections)
+    //Stores all baseStations relative to UE in an array
+    private Vector3[] baseStationDirection(int numStations)
     {
-        var pts = new Vector3[numDirections];
-        var inc = Mathf.PI * (3 - Mathf.Sqrt(5));
-        var off = 2f / numDirections;
+        Vector3[] dirs = new Vector3[numStations];
+        int k = 0;
 
-        foreach (var k in Enumerable.Range(0, numDirections))
+        foreach (GameObject baseStation in GameObject.FindGameObjectsWithTag("baseStation"))
         {
-            var y = k * off - 1 + (off / 2);
-            var r = Mathf.Sqrt(1 - y * y);
-            var phi = k * inc;
-            var x = (float)(Mathf.Cos(phi) * r);
-            var z = (float)(Mathf.Sin(phi) * r);
-            pts[k] = new Vector3(x, y, z);
+            dirs[k] = baseStation.transform.position - transform.position;
+            k++;
         }
-
-        return pts;
+        return dirs;
     }
-
 }
