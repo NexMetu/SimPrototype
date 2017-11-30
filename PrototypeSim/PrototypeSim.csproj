@@ -80,8 +80,10 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\basicController.cs" />
     <Compile Include="Assets\Scripts\nearbyOrientedWalls.cs" />
+    <Compile Include="Assets\Scripts\reflectionCalculation.cs" />
     <Compile Include="Assets\Scripts\signalInefficientRaycast.cs" />
     <Compile Include="Assets\Scripts\signalRaycast.cs" />
+    <Compile Include="Assets\Scripts\wallObject.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

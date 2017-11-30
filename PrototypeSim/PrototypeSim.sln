@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrototypeSim", "Assembly-CSharp.csproj", "{FC963E49-D8F5-F65F-CDED-DB611732F639}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrototypeSim", "PrototypeSim.csproj", "{D6EEEFE8-4472-9A3D-EEA5-9955D09BE582}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +9,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FC963E49-D8F5-F65F-CDED-DB611732F639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FC963E49-D8F5-F65F-CDED-DB611732F639}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FC963E49-D8F5-F65F-CDED-DB611732F639}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FC963E49-D8F5-F65F-CDED-DB611732F639}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6EEEFE8-4472-9A3D-EEA5-9955D09BE582}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6EEEFE8-4472-9A3D-EEA5-9955D09BE582}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6EEEFE8-4472-9A3D-EEA5-9955D09BE582}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6EEEFE8-4472-9A3D-EEA5-9955D09BE582}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
